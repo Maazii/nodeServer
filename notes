@@ -1,0 +1,11 @@
+nodejs is a JavaScript runtime framework.
+
+The unique thing about this is that JavaScript here instead of conducting its process inside the browser, runs inside a terminal.
+
+We can start executing JavaScript code inside the terminal by simply going to the console and provide the node command.
+
+They have the .js extension and can be executed by node (name of file).
+
+console.log("") prints to the console.
+
+git config --global init.defaultBranch <name>
