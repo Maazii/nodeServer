@@ -1,7 +1,15 @@
 const express = require("express");
+const app = express();
 const path = require("path");
 const PORT = process.env.PORT || 3500;
 
-const router = express.Router();
+app.get('^/$|/index(.html)?', (req, res) => {
+    // res.sendFile("./views/index.html", {root: __dirname}); One way to serve a file.
+    res.sendFile(path.join(__dirname, "views", "index.html"));
+})
 
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.get('/*', (req, res) => {
+    res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+})
+
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
