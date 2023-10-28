@@ -5,20 +5,21 @@ const fsPromises = require("fs").promises;
 const path = require("path");
 
 const logEvent = async (message) => {
-    const date = format(new Date(), "dd/MMM/yyyy\tHH:mm:ss");
-    const id = uuid();
-    const logItem = `${message}\t${id}\t${date}\n\n`;
-    console.log(logItem);
-    try {
-        if (!fs.existsSync(path.join(__dirname, "logs")))
-        {
-            await fsPromises.mkdir(path.join(__dirname, "logs"));
-        }
-        await fsPromises.appendFile(path.join(__dirname, "logs", "eventLog.txt"), logItem);
-    } catch (err)
-    {
-        console.log(err);
+  const date = format(new Date(), "dd/MMM/yyyy\tHH:mm:ss");
+  const id = uuid();
+  const logItem = `${message}\t${id}\t${date}\n\n`;
+  console.log(logItem);
+  try {
+    if (!fs.existsSync(path.join(__dirname, "logs"))) {
+      await fsPromises.mkdir(path.join(__dirname, "logs"));
     }
-}
+    await fsPromises.appendFile(
+      path.join(__dirname, "logs", "eventLog.txt"),
+      logItem
+    );
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-module.exports = { logEvent };
+module.exports = logEvent;

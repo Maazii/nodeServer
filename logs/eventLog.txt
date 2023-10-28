@@ -1,0 +1,12 @@
+/	GET	b2d89221-1581-4b00-aefc-02da66da096d	22/Oct/2023	12:00:20
+
+/css/style.css	GET	20b81c09-317a-4e1b-834e-bdb66a88fa43	22/Oct/2023	12:00:20
+
+/favicon.ico	GET	1a047da0-b52b-43f6-ae04-5b1e48272908	22/Oct/2023	12:00:20
+
+/new-page	GET	f69bfbb5-41b9-4dbf-8fea-ec6d6b504ed5	22/Oct/2023	12:00:37
+
+/css/style.css	GET	c75dcc22-cfba-4913-b221-44687d4cbcec	22/Oct/2023	12:00:37
+
+/img/img1.jpg	GET	c2bca9c5-ddac-4687-b954-a9f03e2b36f9	22/Oct/2023	12:00:37
+
